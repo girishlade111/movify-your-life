@@ -1,0 +1,21 @@
+documentation for the Movify-your-life template. This guide includes:
+
+## What's Covered:
+
+1. **Project Overview** - Purpose, key features, and high-level architecture
+2. **Directory Structure** - Complete file organization with descriptions
+3. **Design System** - Color palette, typography, spacing, and layout patterns
+4. **Performance Optimizations** - 7 key techniques with code examples and explanations
+5. **Component Guide** - Detailed documentation for 7 core components with props, features, and usage examples
+6. **Main Page Structure** - Layout flow and key hooks used
+7. **Setup & Installation** - Step-by-step installation and build instructions
+8. **Customization Guide** - 6 practical examples for modifying the site
+9. **Styling Guide** - Tailwind CSS patterns and custom styling approaches
+10. **External Resources** - Links to documentation and tools
+11. **Troubleshooting** - Common issues and solutions
+12. **Performance Metrics** - Target metrics and optimization techniques
+13. **Deployment** - Instructions for Vercel and other platforms
+14. **Best Practices** - Guidelines for performance, accessibility, code organization, styling, and SEO
+
+
+The documentation is written in clear, beginner-friendly language with code examples throughout, making it easy for developers of any skill level to understand and extend the project.
