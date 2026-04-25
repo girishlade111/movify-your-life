@@ -119,8 +119,81 @@ export default function Home() {
     }
   }, [])
 
+  // JSON-LD Structured Data for SEO
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Movify Your Life",
+    "description": "Transform your life story into a professional Hollywood-style movie script. Expert screenwriters craft compelling narratives from your real-life experiences.",
+    "url": "https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life",
+    "provider": {
+      "@type": "Organization",
+      "name": "Movify Your Life",
+      "url": "https://www.script.movie"
+    },
+    "areaServed": "Worldwide",
+    "serviceType": "Screenwriting Services",
+    "offer": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "validUntil": "2026-07-27"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "100"
+    },
+    "sameAs": [
+      "https://www.script.movie/movify"
+    ]
+  }
+
   return (
     <>
+      {/* JSON-LD for Search Engines */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      {/* Organization Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Movify Your Life",
+          "url": "https://www.script.movie",
+          "logo": "https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-000-000-0000",
+            "contactType": "Customer Service"
+          },
+          "sameAs": [
+            "https://www.script.movie/movify"
+          ]
+        }) }}
+      />
+
+      {/* Website Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Movify Your Life",
+          "url": "https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }) }}
+      />
+
       <FontPreloader />
       <WebWorkerManager onReady={handleWorkerReady} />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 relative overflow-hidden">

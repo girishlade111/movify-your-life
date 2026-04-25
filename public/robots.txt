@@ -1,0 +1,57 @@
+# Robots.txt for Movify Your Life
+# https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yahoo! Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: BaiduBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Sogou spider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Exabot
+Allow: /
+Crawl-delay: 1
+
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 1
+
+# Disallow private paths (if any)
+# Disallow: /api/
+# Disallow: /admin/
+# Disallow: /private/
+
+# Host directive
+Host: https://vercel.com/pijako9357-1154s-projects/v0-movify-your-life
