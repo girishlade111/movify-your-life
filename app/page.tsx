@@ -14,6 +14,7 @@ import CriticalHeader from "@/components/performance/critical-header"
 import HeroSkeleton from "@/components/performance/hero-skeleton"
 import MemoizedProgressiveLoader from "@/components/performance/memoized-progressive-loader"
 import WebWorkerManager from "@/components/performance/web-worker-manager"
+import Footer from "@/components/footer"
 
 // Memoized hero content component
 const HeroContent = React.memo(function HeroContent() {
@@ -226,6 +227,8 @@ export default function Home() {
           <OptimizedWhyMeSection />
         </Suspense>
       </div>
+
+      <Footer />
 
       <style jsx global>{`
         @keyframes fade-in {
