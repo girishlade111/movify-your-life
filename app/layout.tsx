@@ -101,7 +101,23 @@ export const metadata: Metadata = {
       url: 'https://www.script.movie/movify',
       should_fallback: true
     }
+  },
+
+  // Social Media Profiles
+  metadata: {
+    'instagram:creator': '@girish_lade_',
+    'instagram:site': '@girish_lade_'
   }
+}
+
+// Social Links for JSON-LD
+export const socialLinks = {
+  instagram: 'https://www.instagram.com/girish_lade_/',
+  linkedin: 'https://www.linkedin.com/in/girish-lade-075bba201/',
+  github: 'https://github.com/girishlade111',
+  codepen: 'https://codepen.io/Girish-Lade-the-looper',
+  email: 'admin@ladestack.in',
+  website: 'https://ladestack.in'
 }
 
 export default function RootLayout({
