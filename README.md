@@ -347,3 +347,8 @@ Private - All rights reserved
 - **Tailwind CSS**: 4.x
 - **Total Dependencies**: 60+
 - **Build Status**: ✅ Production Ready
+---
+
+## Author
+
+**Built by Girish Lade** — [ladestack.in](https://ladestack.in)
